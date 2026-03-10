@@ -7,7 +7,6 @@
 </head>
 
 <body>
-    <h1>iefhreg</h1>
     <?php require_once 'header.php'; ?>
    <div class="container">
         <h1>Nieuwe melding</h1>
