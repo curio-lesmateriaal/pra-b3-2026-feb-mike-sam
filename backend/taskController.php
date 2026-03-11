@@ -1,25 +1,23 @@
 <?php
-
 $action = $_POST['action'] ?? '';
 if ($action === 'create') {
-    $title       = $_POST['title'] ?? '';
+    $titel       = $_POST['titel'] ?? '';
     $afdeling    = $_POST['afdeling'] ?? '';
     $beschrijving= $_POST['beschrijving'] ?? '';
-    require_once 'conn.php';
+    
 }
-
+require_once 'conn.php';
 $query = "INSERT INTO taken (titel, afdeling, beschrijving)
 VALUES(:titel, :afdeling, :beschrijving)";
 
 $statement = $conn->prepare($query);
-
 $statement->execute([
-":titel" => $titel,
-":afdeling" => $afdeling,
-":beschrijving" => $beschrijving,
+":titel" => $_POST['titel'],
+":afdeling" => $_POST['afdeling'],
+":beschrijving" => $_POST['beschrijving'],
 ]);
 
-header("Location: ");
+header("Location: ../index.php ");
 
 
 ?>

@@ -11,7 +11,7 @@
    <div class="container">
         <h1>Nieuwe melding</h1>
 
-        <form action="<?php echo $base_url; ?>../backend/taskController" method="POST">
+        <form action="<?php echo $base_url; ?>/backend/taskController.php" method="POST">
 
             <div class="form-group">
                 <label for="titel">Titel:</label>
@@ -35,7 +35,6 @@
             </div>
 
             <input type="submit" value="Verstuur melding">
-
         </form>
     </div>
 </body>
