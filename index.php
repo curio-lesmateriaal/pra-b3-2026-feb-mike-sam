@@ -41,6 +41,7 @@
             <th>Titel</th>
             <th>Afdeling</th>
             <th>Beschrijving</th>
+            <th>Aanpassen</th>
         </tr>
         <?php foreach($taken as $taak): ?>
             <tr>

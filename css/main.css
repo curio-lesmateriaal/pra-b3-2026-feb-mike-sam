@@ -36,7 +36,16 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
-
+table{
+  width: 100%;
+}
+tr:first-child{
+  background-color: #d3d3d3;
+}
+tr{
+  text-align: center;
+  background-color: #ebebeb;
+}
 /*
  * A better looking default horizontal rule
  */
