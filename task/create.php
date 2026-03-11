@@ -9,9 +9,11 @@
 <body>
     <?php require_once 'header.php'; ?>
    <div class="container">
-        <h1>Nieuwe melding</h1>
+        <h1>Nieuwe Taak</h1>
 
         <form action="<?php echo $base_url; ?>/backend/taskController.php" method="POST">
+            <!-- geef aan welke actie we willen uitvoeren zodat taskController kan reageren -->
+            <input type="hidden" name="action" value="create">
 
             <div class="form-group">
                 <label for="titel">Titel:</label>
