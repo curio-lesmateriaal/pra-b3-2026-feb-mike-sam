@@ -8,7 +8,7 @@
 
 <body>
 
-    <?php require_once '/header.php'; ?>
+    <?php require_once 'header.php'; ?>
 
     <div class="container">
         <h1>Aanpassen bericht</h1>
