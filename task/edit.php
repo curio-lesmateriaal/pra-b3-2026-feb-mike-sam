@@ -36,7 +36,7 @@
             <input type="submit" value="Opslaan">             
         </form>
         
-        <form action="../backend/berichtenController.php" method="POST">
+        <form action="../backend/taskController.php" method="POST">
             <input type="hidden" name="action" value="delete">
             <input type="hidden" name="id" value="<?php echo $bericht['id']; ?>">
             <input type="submit" value="Verwijder bericht">
