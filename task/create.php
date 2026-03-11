@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
                 <label for="beschrijving">Beschrijving:</label>
-                <textarea name="beschrijving" id="beschrijving" class="form-input" rows="4"></textarea>
+                <textarea name="beschrijving" id="beschrijving" class="form-input" rows="4" required></textarea>
             </div>
 
             <input type="submit" value="Verstuur melding">

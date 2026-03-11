@@ -1,9 +1,16 @@
 <?php
 $action = $_POST['action'] ?? '';
 if ($action === 'create') {
-    $titel       = $_POST['titel'] ?? '';
-    $afdeling    = $_POST['afdeling'] ?? '';
-    $beschrijving= $_POST['beschrijving'] ?? '';
+    
+    $titel = trim($_POST['titel'] ?? '');
+    if ($titel === '') {
+        die("Vul een titel in");
+    }
+
+    $beschrijving = ($_POST['beschrijving'] ?? '');
+    if ($beschrijving === '') {
+        die("Vul de beschrijving in");
+    }
     
 }
 require_once 'conn.php';
@@ -17,7 +24,7 @@ $statement->execute([
 ":beschrijving" => $_POST['beschrijving'],
 ]);
 
-header("Location: ../index.php ");
+header("Location: ../index.php?msg=Taak succesvol aangemaakt");
 
 
 ?>
