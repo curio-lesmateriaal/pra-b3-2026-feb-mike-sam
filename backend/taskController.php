@@ -8,6 +8,18 @@ if ($action === 'create') {
     require_once 'conn.php';
 }
 
+$query = "INSERT INTO taken (titel, afdeling, beschrijving)
+VALUES(:titel, :afdeling, :beschrijving)";
+
+$statement = $conn->prepare($query);
+
+$statement->execute([
+":titel" => $titel,
+":afdeling" => $afdeling,
+":beschrijving" => $beschrijving,
+]);
+
+header("Location: ");
 
 
 ?>
